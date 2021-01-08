@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="89dp"
         android:ems="10"
+        android:hint="id"
         android:inputType="textPersonName"
-        android:text="id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:ems="10"
+        android:hint="nombre"
         android:inputType="textPersonName"
-        android:text="nombre"
         app:layout_constraintStart_toStartOf="@+id/dbId"
         app:layout_constraintTop_toBottomOf="@+id/dbId" />
 
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
         android:ems="10"
+        android:hint="matricula"
         android:inputType="textPersonName"
-        android:text="matricula"
         app:layout_constraintEnd_toEndOf="@+id/dbNombre"
         app:layout_constraintTop_toBottomOf="@+id/dbNombre" />
 
@@ -66,17 +66,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginBottom="93dp"
         android:onClick="agregar"
         android:text="Agregar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="343dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="113dp"
+        android:onClick="cargarPrefsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/img5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
